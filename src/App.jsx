@@ -1,17 +1,10 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Routes from './components/routes';
 import './App.css';
+import BucketList from './components/BucketList';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="content">
-        <Routes />
-      </div>
-      <Footer />
+    <div className="bucket-app">
+      <BucketList />
     </div>
   );
 }
