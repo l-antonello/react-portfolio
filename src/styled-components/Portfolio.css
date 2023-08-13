@@ -30,6 +30,11 @@
     margin-bottom: 10px; /* Add spacing between title and image */
   }
   
+  .project p {
+    font-size: 1rem; /* Increase the font size for description text */
+    line-height: 1.5; /* Improve line spacing */
+  }
+  
   .project img {
     max-width: 100%;
     height: auto; /* Let the image maintain its aspect ratio */
