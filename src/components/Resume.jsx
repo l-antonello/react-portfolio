@@ -1,32 +1,46 @@
+// Resume.jsx
 import React from 'react';
-
 import '../styled-components/Resume.css';
-
+import resumeImage from '../assets/images/luke-resume.jpg';
 
 const Resume = () => {
-  const proficiencies = [
-    'JavaScript',
-    'React',
-    'HTML',
-    'CSS',
-    'Node.js',
-    'Git',
-    // Add more proficiencies as needed
+  const proficiencyCategories = [
+    {
+      title: 'Programming Languages',
+      proficiencies: ['JavaScript', 'HTML', 'CSS', 'Apex', 'Computer Science', ''],
+    },
+    {
+      title: 'Databases',
+      proficiencies: ['MongoDB', 'MySQL', 'NoSQL', 'GraphQL', ''],
+    },
+    {
+      title: 'Frameworks',
+      proficiencies: ['React', 'Bulma', 'Bootstrap', 'Node.js', 'Express.js', 'Handlebars.js', 'Jest', ''],
+    },
+    {
+      title: 'Fundraising',
+      proficiencies: ['Grant Writing', 'Grant Management', 'Microsoft Office Applications', ''],
+    },
+    // Add more proficiency categories as needed
   ];
 
   return (
     <section className="resume">
       <h2>Resume</h2>
-      <div className="proficiencies">
-        <h3>Proficiencies</h3>
-        <ul>
-          {proficiencies.map((proficiency, index) => (
-            <li key={index}>{proficiency}</li>
-          ))}
-        </ul>
+      <div className="proficiency-categories">
+        {proficiencyCategories.map((category, index) => (
+          <div key={index} className="proficiency-category">
+            <h3>{category.title}</h3>
+            <ul>
+              {category.proficiencies.map((proficiency, proficiencyIndex) => (
+                <li key={proficiencyIndex}>{proficiency}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
       <div className="download-resume">
-        <a href="/path/to/your/resume.pdf" download>
+        <a href={resumeImage} download="luke-resume.jpg">
           Download Resume
         </a>
       </div>

@@ -5,6 +5,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components//Footer';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function App() {

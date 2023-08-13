@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-
 import '../styled-components/Contact.css';
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
+  });
+
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false
   });
 
   const handleInputChange = (event) => {
@@ -18,10 +21,25 @@ const Contact = () => {
     });
   };
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here, e.g. sending data to a backend
-    console.log('Form submitted:', formData);
+
+    const newErrors = {
+      name: formData.name === '',
+      email: !validateEmail(formData.email)
+    };
+
+    setErrors(newErrors);
+
+    if (!newErrors.name && !newErrors.email) {
+      // Handle form submission logic here, e.g. sending data to a backend
+      console.log('Form submitted:', formData);
+    }
   };
 
   return (
@@ -38,6 +56,7 @@ const Contact = () => {
             onChange={handleInputChange}
             required
           />
+          {errors.name && <p className="error-text">Name is required</p>}
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -49,6 +68,7 @@ const Contact = () => {
             onChange={handleInputChange}
             required
           />
+          {errors.email && <p className="error-text">Enter a valid email address</p>}
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>

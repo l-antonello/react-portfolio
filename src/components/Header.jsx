@@ -3,11 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import '../styled-components/Header.css';
 
-
 const Header = () => {
   return (
     <header>
-      <h1>Developer's Portfolio</h1>
+      <h1>Luke's Portfolio</h1>
       <nav>
         <NavLink exact to="/" activeClassName="active">About Me</NavLink>
         <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>

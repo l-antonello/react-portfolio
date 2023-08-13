@@ -5,6 +5,10 @@
     padding: 2rem;
   }
   
+  .headshot:hover {
+    transform: scale(1.1); /* Make the image grow on hover */
+  }
+
   .bio {
     margin-top: 2rem;
     display: flex;
