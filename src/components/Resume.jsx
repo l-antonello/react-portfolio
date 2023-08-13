@@ -1,5 +1,8 @@
 import React from 'react';
 
+import '../styled-components/Resume.css';
+
+
 const Resume = () => {
   const proficiencies = [
     'JavaScript',

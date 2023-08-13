@@ -1,5 +1,8 @@
 import React from 'react';
 
+import '../styled-components/Portfolio.css';
+
+
 const Portfolio = () => {
   const projects = [
     {
