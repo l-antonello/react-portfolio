@@ -5,19 +5,19 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
 
   const [errors, setErrors] = useState({
     name: false,
-    email: false
+    email: false,
   });
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -31,7 +31,7 @@ const Contact = () => {
 
     const newErrors = {
       name: formData.name === '',
-      email: !validateEmail(formData.email)
+      email: !validateEmail(formData.email),
     };
 
     setErrors(newErrors);
