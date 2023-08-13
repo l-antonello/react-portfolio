@@ -51,7 +51,7 @@ const Portfolio = () => {
     {
       title: 'Class Assignment: employee-tracker',
       description: "This is a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
-      liveLink: '',
+      liveLink: 'https://drive.google.com/file/d/15GYKCocbFLIDAnHp3dw2rQsrzIz0uVK_/view',
       githubLink: 'https://github.com/l-antonello/employee-tracker/tree/main',
       image: hw12Image,
     },
