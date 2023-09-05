@@ -2,7 +2,7 @@ import React from 'react';
 
 import pj1Image from '../assets/images/pj1.png';
 import pj2Image from '../assets/images/pj2.png';
-import pj3Image from '../assets/images/pj3.avif';
+import pj3Image from '../assets/images/pj3.png';
 import hw9Image from '../assets/images/hw9.png';
 import hw10Image from '../assets/images/hw10.png';
 import hw12Image from '../assets/images/hw12.png';
@@ -28,10 +28,10 @@ const Portfolio = () => {
       image: pj2Image,
     },
     {
-      title: 'Project 3: Fitness Tracker (title TBD)',
+      title: 'Project 3: FitGuide12',
       description: 'This application will allow users to track their workouts and view their progress over time. Users will be able to create new workouts and add exercises to them. They will also able to view their stats on a dashboard. Check back soon for more details!',
-      liveLink: '',
-      githubLink: '',
+      liveLink: 'https://health-wellness-intro-planner-15375fd8b435.herokuapp.com/',
+      githubLink: 'https://github.com/jjsdunc88/health-wellness-planner',
       image: pj3Image,
     },
     {
