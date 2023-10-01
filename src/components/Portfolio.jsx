@@ -28,7 +28,7 @@ const Portfolio = () => {
       image: pj2Image,
     },
     {
-      title: 'Project 3: FitGuide12',
+      title: 'Project 3: FitGuide',
       description: 'This application will allow users to track their workouts and view their progress over time. Users will be able to create new workouts and add exercises to them. They will also able to view their stats on a dashboard. Check back soon for more details!',
       liveLink: 'https://health-wellness-intro-planner-15375fd8b435.herokuapp.com/',
       githubLink: 'https://github.com/jjsdunc88/health-wellness-planner',

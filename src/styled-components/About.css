@@ -2,8 +2,11 @@
 
 .about {
   text-align: center;
-  padding: 2rem;
+  padding: 4rem;
+  margin-left: 15%; 
+  margin-right: 15%; 
 }
+
 
 .bio {
   margin-top: 2rem;
