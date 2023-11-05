@@ -1,7 +1,7 @@
 // Resume.jsx
 import React from 'react';
 import '../styled-components/Resume.css';
-import resumeImage from '../assets/images/luke-resume.jpg';
+import resumeImage from '../assets/images/luke-resume.pdf';
 
 const Resume = () => {
   const proficiencyCategories = [
@@ -40,7 +40,7 @@ const Resume = () => {
         ))}
       </div>
       <div className="download-resume">
-        <a href={resumeImage} download="luke-resume.jpg">
+        <a href={resumeImage} download="luke-resume.pdf">
           Download Resume
         </a>
       </div>
